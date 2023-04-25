@@ -1,57 +1,261 @@
+<!--DEVELOPER: Eugene Amparbeng, IS117-002, Spring, 2023 -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Title</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/mystyle.css">
+        <!-- Page title -->
+        <title>Index Fund Research Center</title>
+        <!-- Meta description -->
+        <meta name="description" content="A smarter to research index funds. Join for FREE today.">
+        <link rel="stylesheet" href="/styles/bootstrap.css">
+        <!-- App styles -->
+        <link rel="stylesheet" href="/styles/style.css">
     </head>
     <body>
+
     <!-- Wrapper-->
-    <div class="wrapper">
+    <div>
+
         <!-- Header-->
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <div id="mobile-menu">
-                        <div class="left-nav-toggle">
-                            <a href="#">
-                                <i class="stroke-hamburgermenu"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <a class="navbar-brand" href="index.html">
-                        <img src="images/square.svg" height="20px" style="float: left" alt="">
-                        <div class="site-title" style="color: #BFEFFF; margin-top: 0">
-                             Index Fund Research Center
 
-                        </div>
+                    <a class="navbar-brand" href="/index.php">
+
+                        <img src="/images/etfrc_inv.svg" height="20px" style="float: left">
+                        <!--
+                        <img src="/images/etfrc_type_white.png" height="27px"  style="padding-left: 5px">
+                        -->
+                        <div class="site-title" style="color: #BFEFFF; margin-top: 0px"><!--<i class="pe-7s-graph1"></i>--> etfrc.com</div>
                     </a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
-                    <div class="site-title">
-                        <img src="images/square.svg" height="20px" style="margin-top: -5px" alt="">
-                        Index Fund Research Center
+                    <div class="left-nav-toggle">
+                        <a href="#">
+                            <i class="stroke-hamburgermenu"></i>
+                        </a>
+                        <div data-toggle="modal" data-target="#quickSearchModal" style="cursor: pointer; display: inline-block">
+                            <i class="pe-7s-search" style="color: white; font-size: 30px; padding: 0px 5px 0px 20px"></i>
+                        </div>
                     </div>
+
+                    <!---
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="profil-link">
+                        </li>
+                    </ul>
+                    -->
+                    <div class="nav navbar-nav navbar-right">
+                        <div data-toggle="modal" data-target="#logInModal" style="cursor: pointer; display: inline-block">
+                            <i class="pe-7s-unlock" style="color: white; font-size: 30px; padding: 15px 25px 0px 0px"></i>
+                        </div>
+
+                        <div data-toggle="modal" data-target="#helpModal" style="cursor: pointer; display: inline-block">
+                            <i class="pe pe-7s-help1" style="color: white; font-size: 30px; padding: 15px 25px 0px 0px"></i>
+                        </div>
+                    </div>
+                    <div class="site-title"> <img src="/images/etfrc_inv.svg" height="20px" style="margin-top: -5px"> ETF Research Center</div>
                 </div>
             </div>
         </nav>
+        <!-- End header-->
+
+        <!-- Navigation-->
         <aside class="navigation">
             <nav>
                 <ul class="nav luna-nav">
-                    <li>…</li>
-                    <li>…</li>
-                    <li>…</li>
-                    <li>…</li>
-                    <li>…</li>
+
+                    <li>
+                        <a href="#about" class="nav-category">
+                            About</a>
+
+                    </li>
+
+                    <li>
+                        <a href="#tools" data-toggle="collapse" aria-expanded="false" class="nav-category">Contact Form</a>
+
+                    </li>
+
+                    <li>
+                        <a href="#" data-toggle="collapse" aria-expanded="false" class="nav-category collapsed">History</a>
+                        <ul id="History" class="nav nav-second collapse" aria-expanded="false" style="height: 0px;">
+                            <li><a href="">History of Index Funds</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#" data-toggle="collapse" aria-expanded="false" class="nav-category">Financial Institutions<span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span></a>
+                        <ul id="news" class="nav nav-second collapse" aria-expanded="false" style="height: 0px;">
+                            <li><a href="/articles/" target="_blank">FORUM Blog</a></li>
+                            <li><a href="https://twitter.com/ETFResearchCtr" target="_blank">Twitter</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a href="#" data-toggle="collapse" aria-expanded="false" class="nav-category">Portfolios<span class="sub-nav-icon"> <i class="stroke-arrow"></i> </span></a>
+                        <ul id="Portfolios" class="nav nav-second collapse" aria-expanded="false" style="height: 0px;">
+                            <li><a href="/subscriptions.php">Subscription levels</a></li>
+                            <li><a href="/accounts/registration.php">Sign Up</a></li>
+                        </ul>
+                    </li>
+
+
+
+
+
                 </ul>
             </nav>
         </aside>
+        <!-- End navigation-->
+
+
+        <!-- Main content-->
+        <section class="content">
+            <div class="container-fluid">
+
+
+                <div id="main_splash">
+                    <div class="splash_headline">Index Fund Research &amp; Analysis<br><small>for everyone</small></div>
+                    <br>
+                    <br>
+                    <br>
+
+                    <a href="login">
+                        <button class="btn btn-primary btn-lg"> Join Free Today </button>
+                    </a>
+                    <br>
+                    <br>
+                    <br>
+
+                    <h3>
+                        <small>
+                            <a href="/SPY" class="emphasis-link">FUND FOCUS</a> &nbsp;
+                            | &nbsp; <a href="/funds/screening.php" class="emphasis-link">FUND SCREENING</a> &nbsp;
+                            | &nbsp; <a href="/portfolios/builder.php" class="emphasis-link">PORTFOLIO BUILDER</a> &nbsp;
+                            | &nbsp; <a href="/funds/overlap.php" class="emphasis-link">FUND OVERLAP</a> &nbsp;
+                            | &nbsp; <a href="/funds/stocklocator.php" class="emphasis-link">STOCK LOCATOR</a> &nbsp;
+                            | &nbsp; <a href="/funds/mywatchlist.php" class="emphasis-link">WATCHLIST</a>
+                        </small>
+                    </h3>
+
+                    <br>
+                    <img src="/images/landing_image.jfif" style="width: 50%" alt="landing image">
+                    <br>
+                    <br>
+                </div>
+
+                <br>
+
+
+
+                <br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="/SPY" style="text-decoration: none">
+                            <div class="panel panel-filled">
+                                <div class="panel-heading">Fund Focus</div>
+                                <div class="panel-body">
+                                    <div class="view-header">
+                                        <div class="header-icon">
+                                            <i class="pe page-header-icon pe-7s-graph"></i>
+                                        </div>
+                                        <p>Drill down to the all-important details for the complete picture: description, performance, and most
+                                            importantly, our proprietary data on fundamentals and investment merit such as sales and earnings growth, estimate
+                                            revisions and valuation metrics, and much more.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+
+                </div><!-- END OF ROW -->
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="/funds/screening.php" style="text-decoration: none">
+                            <div class="panel panel-filled">
+                                <div class="panel-heading">Fund Screening</div>
+                                <div class="panel-body">
+                                    <div class="view-header">
+                                        <div class="header-icon">
+                                            <i class="pe page-header-icon pe-7s-filter"></i>
+                                        </div>
+                                        <p>Quickly screen hundreds of ETFs, going well beyond the basics of fees and past performance. Whether
+                                            your investment strategy is deep value, growth at any price or somewhere in between, you can screen funds
+                                            based on criteria that matter to you.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div><!-- END OF ROW -->
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="/funds/stocklocator.php" style="text-decoration: none">
+                            <div class="panel panel-filled">
+                                <div class="panel-heading">Stock Locator</div>
+                                <div class="panel-body">
+                                    <div class="view-header">
+                                        <div class="header-icon">
+                                            <i class="pe page-header-icon pe-7s-helm"></i>
+                                        </div>
+                                        <p>ETFs are a great way to hedge single-stock risk, especially around earnings and other corporate
+                                            events, but which ETFs are best for this? Stock Locator allows you to enter a stock's ticker
+                                            and get a list of all ETFs with exposure, and how much they hold.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+                <!-- Pop-up Modal for Log In  -->
+
+
+                <!-- Pop-up Modal for Help  -->
+
+
+                <!-- Pop-up Modal for Quick Search  -->
+
+
+            </div>
+        </section>
+        <!-- End main content-->
 
     </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
     </body>
 </html>

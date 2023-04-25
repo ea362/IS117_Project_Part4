@@ -1,0 +1,129 @@
+.label-accent {
+    background-color: #f6a821;
+}
+body {
+    background: #2f323b;
+    font-family: 'Roboto', sans-serif;
+    color: #949ba2;
+}
+.content {
+    margin-top: 60px;
+    margin-left: 200px;
+    position: relative;
+    padding: 30px;
+    transition: margin-left 0.3s ease-out;
+    -webkit-transition: margin-left 0.3s ease-out;
+}
+
+.navigation {
+    margin-top: 60px;
+    background-color: #24262d;
+    width: 200px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    transition: left 0.3s ease-out;
+    -webkit-transition: left 0.3s ease-out;
+}
+.navigation nav {
+    background-color: #2a2d35;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:focus {
+    width: 200px;
+    background-color: #24262D;
+
+    height: 60px;
+    padding: 20px 25px 0px 25px;
+    font-weight: 200;
+    color: #FFFFFF;
+}
+
+.navbar-default {
+    border-bottom: none;
+    background: linear-gradient(#0c104B 95%, #0C104B);
+}
+.left-nav-toggle {
+    float: left;
+    padding: 9px 10px 8px 25px;
+}
+
+.luna-nav.nav {
+    padding-top: 15px;
+}
+
+
+.luna-nav.nav .nav-category {
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.panel {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: #d2dae2;
+    border-radius: 3px;
+}
+
+
+.panel > .panel-heading {
+    color: #ffffff;
+    background-color: #4f505f;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 2px solid #9FA1BE;
+}
+
+.panel.panel-filled {
+    background-color: rgba(68, 70, 79, 0.5);
+}
+.view-header {
+    margin: 20px 0;
+    min-height: 50px;
+    padding: 0 15px;
+}
+
+.site-title {
+    font-weight: 300;
+    letter-spacing: 0.0em;
+    color: #fff;
+    font-size: 24px;
+    margin-top: 0.6em;
+    text-align: center;
+}
+
+#main_splash {
+    text-align: center;
+    margin: -50px -45px 0px -45px;
+    background-image:linear-gradient(#0C104B 30%, #8789AE);
+    padding-top: 100px
+}
+.splash_headline {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-size: 44px;
+}
+.emphasis-link {
+    color: #d2dae2;
+    text-decoration: none;
+}
+
+.plan ul{
+    list-style: none;
+    font-size: 15px;
+    color: #9095aa;
+    padding: 0px;
+    margin: 0px;
+}
+.plan li{
+    border-bottom: 1px solid #494a5a;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    height: 52px;
+    line-height: 52px;
+}
