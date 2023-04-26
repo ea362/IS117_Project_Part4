@@ -1,10 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Form</title>
+        <meta name="description" content="A smarter to research index funds. Join for FREE today.">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+    <header class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/IS117_Project_Part4/index.html">
+                    <div class="image">
+                        <img src="/IS117_Project_Part4/images/square.svg" alt="" height="20px" style="float: left">
+                    </div>
+                    <div class="site-title style=color: #BFEFFF">
+                        IFRC.com
+                    </div>
+                </a>
+            </div>
+            <div class="topnav-centered">
+                <a class="navbar-brand" href="/IS117_Project_Part4/index.html">
+                    <div class="image">
+                        <img src="/IS117_Project_Part4/images/square.svg" alt="" height="20px" style="float: left">
+                    </div>
+                    <div class="site-title style=color: #BFEFFF">
+                        Index Fund Reasearch Center
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <aside class="navigation">
+        <div class="sidenav">
+            <a href="/IS117_Project_Part4/about.html">About</a>
+            <a href="/IS117_Project_Part4/contact.html">Contact Form</a>
+            <a href="/IS117_Project_Part4/history.html">History</a>
+            <button class="dropdown-btn">Institutions
+                <i class="arrow down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="/fin_inst.html">Overview</a>
+                <a href="#">Vanguard</a>
+                <a href="#">BlackRock </a>
+                <a href="#">StateStreet </a>
+                <a href="#">Fidelity </a>
+                <a href="#">Charles Schwab </a>
+            </div>
+            <button class="dropdown-btn">Portfolios
+                <i class="arrow down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="/IS117_Project_Part4/fin_inst.html">Overview</a>
 
-</body>
+            </div>
+            <a href="/IS117_Project_Part4/future_outlook.html">Future Outlooks</a>
+        </div>
+    </aside>
+    <section class="content">
+        <div class="container-fluid">
+            <div class="container">
+                <form action="">
+
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Contact Form</a></li>
+                            <li><a href="#">Disclaimer</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">&copy; April 24<sup>th</sup> 2023, Eugene Amparbeng</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    </body>
 </html>
