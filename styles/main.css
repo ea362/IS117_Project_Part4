@@ -193,7 +193,7 @@ img {
     color: #9FA1BE;
     width: 68px;
     float: left;
-    margin-top: -8px;
+    margin-top: 8px;
     line-height: 0;
 }
 p {
@@ -202,6 +202,9 @@ p {
     margin-block-end: 1em;
     margin-inline-start: 0;
     margin-inline-end: 0;
+}
+.c-white{
+    color: #FFFFFF;
 }
 .footer-clean {
     padding:50px 0;
@@ -273,7 +276,6 @@ p {
         margin-top:40px;
     }
 }
-
 @media (max-width:767px) {
     .footer-clean .item.social > a {
         margin-top:10px;
@@ -284,4 +286,12 @@ p {
     margin-bottom:0;
     font-size:13px;
     opacity:0.6;
+}
+.view-header .header-title {
+    margin-left: 68px;
+}
+ h4 {
+    color: #FFFFFF;
+     margin-top: 10px;
+     margin-bottom: 10px;
 }
