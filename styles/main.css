@@ -1,0 +1,12 @@
+
+.navbar-default {
+    border-bottom: none;
+    background: linear-gradient(#0c104B 95%, #0C104B);
+}
+.navbar {
+    min-height: 60px;
+}
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+}
