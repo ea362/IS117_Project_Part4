@@ -9,6 +9,8 @@
         <title>Index Fund Research Center</title>
         <meta name="description" content="A smarter to research index funds. Join for FREE today.">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
         <link rel="stylesheet" href="styles/main.css">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="helper_scripts/jquery.slicknav.min.js"></script>
@@ -17,7 +19,7 @@
         <header class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="/IS117_Project_Part4/index.html">
                         <div class="image">
                             <img src="/images/square.svg" alt="" height="20px" style="float: left">
                         </div>
@@ -27,7 +29,7 @@
                     </a>
                 </div>
                 <div class="topnav-centered">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="/IS117_Project_Part4/index.html">
                         <div class="image">
                             <img src="/images/square.svg" alt="" height="20px" style="float: left">
                         </div>
@@ -40,10 +42,9 @@
         </header>
         <aside class="navigation">
             <div class="sidenav">
-                <a href="/about.html">About</a>
-                <a href="/contact.html">Contact Form</a>
-                <a href="/history.html">History</a>
-                <a href="/contact">Contact</a>
+                <a href="/IS117_Project_Part4/about.html">About</a>
+                <a href="/IS117_Project_Part4/contact.html">Contact Form</a>
+                <a href="/IS117_Project_Part4/history.html">History</a>
                 <button class="dropdown-btn">Institutions
                     <i class="arrow down"></i>
                 </button>
@@ -59,10 +60,10 @@
                     <i class="arrow down"></i>
                 </button>
                 <div class="dropdown-container">
-                    <a href="/fin_inst.html">Overview</a>
+                    <a href="/IS117_Project_Part4/fin_inst.html">Overview</a>
 
                 </div>
-                <a href="/future_outlook.html">Future Outlooks</a>
+                <a href="/IS117_Project_Part4/future_outlook.html">Future Outlooks</a>
             </div>
         </aside>
         <section class="content">
@@ -167,11 +168,27 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </section>
+        <div class="footer-clean">
+            <footer>
+                <div class="container">
+                    <div class="row justify-content-center">
 
+                        <div class="col-sm-4 col-md-3 item">
+                            <h3>About</h3>
+                            <ul>
+                                <li><a href="#">Contact Form</a></li>
+                                <li><a href="#">Disclaimer</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                            <p class="copyright">&copy; April 24<sup>th</sup> 2023, Eugene Amparbeng</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
         <script>
             /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
             var dropdown = document.getElementsByClassName("dropdown-btn");
