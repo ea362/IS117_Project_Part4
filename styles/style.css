@@ -23,8 +23,6 @@ body {
     left: 0;
     bottom: 0;
     top: 0;
-    transition: left 0.3s ease-out;
-    -webkit-transition: left 0.3s ease-out;
 }
 .navigation nav {
     background-color: #2a2d35;
@@ -36,7 +34,7 @@ body {
     background-color: #24262D;
 
     height: 60px;
-    padding: 20px 25px 0px 25px;
+    padding: 20px 25px 0 25px;
     font-weight: 200;
     color: #FFFFFF;
 }
@@ -98,7 +96,7 @@ body {
 
 #main_splash {
     text-align: center;
-    margin: -50px -45px 0px -45px;
+    margin: -50px -45px 0 -45px;
     background-image:linear-gradient(#0C104B 30%, #8789AE);
     padding-top: 100px
 }
@@ -116,14 +114,60 @@ body {
     list-style: none;
     font-size: 15px;
     color: #9095aa;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 .plan li{
     border-bottom: 1px solid #494a5a;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     text-align: center;
     height: 52px;
     line-height: 52px;
+}
+.luna-nav .nav .sub-nav-icon{
+    float: right;
+    -webkit-transform: rotate(90deg);
+}
+.arrow {
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    float: right;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.collapse.in {
+    display: block;
+}
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+#mobile_menu {display: none;}
+@media only screen and (max-width: 648px) {
+    header img { float: none; }
+    header { text-align: center; }
+    section { float: none; width: 95%;}
+    aside { float: none; padding-right: 2.5%; width: 95%; }
+    article img { max-width: 30%; }
+    #speakers { column-count: 2; }
+    #nav_menu { display: none;}
+    #mobile_menu { display: block;}
+    .slicknav_menu {background-color: #24262d !important; }
 }
